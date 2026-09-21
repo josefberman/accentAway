@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>AccentAway</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>AccentAway</h1>
+      <p class="tagline">Live US / UK accent conversion</p>
+    </header>
+
+    <section>
+      <label>Accent</label>
+      <div class="row">
+        <button id="accent-us" class="choice" data-accent="us">American</button>
+        <button id="accent-uk" class="choice" data-accent="uk">British</button>
+      </div>
+    </section>
+
+    <section>
+      <label>Voice</label>
+      <div class="row">
+        <button id="gender-auto" class="choice" data-gender="auto">Auto</button>
+        <button id="gender-male" class="choice" data-gender="male">Male</button>
+        <button id="gender-female" class="choice" data-gender="female">Female</button>
+      </div>
+    </section>
+
+    <section>
+      <label for="volume">Converted volume</label>
+      <input id="volume" type="range" min="0" max="1" step="0.05" />
+    </section>
+
+    <section class="status">
+      <div><span>Backend</span><strong id="backend">checking…</strong></div>
+      <div><span>Mode</span><strong id="mode">—</strong></div>
+      <div><span>Device</span><strong id="device">—</strong></div>
+      <div><span>Gender</span><strong id="gender">—</strong></div>
+      <div><span>Latency</span><strong id="latency">—</strong></div>
+    </section>
+
+    <p id="error" class="error" hidden></p>
+
+    <div class="row">
+      <button id="toggle" class="primary">Start</button>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

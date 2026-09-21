@@ -216,3 +216,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# AccentAway local runtime
+third_party/seed-vc/
+backend/.venv/
+backend/pretrained_models/
+backend/refs/*.wav
+*.wav.download
+.cursor/

@@ -1,0 +1,13 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+numpy>=1.26.0
+librosa>=0.10.2
+soundfile>=0.12.1
+python-multipart>=0.0.9
+
+# GPU voice conversion (install the CUDA wheel from https://pytorch.org first):
+#   torch
+#   torchaudio
+#   huggingface_hub
+# Optional neural gender classifier (CPU):
+#   speechbrain
